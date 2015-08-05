@@ -1,0 +1,12 @@
+AB TESTING REFERENCES
+Juho Salminen
+
+evanmiller.org Sample Size Calculator:
+http://www.evanmiller.org/ab-testing/sample-size.html
+
+GraphPad Sign and binomial test calculator:
+http://graphpad.com/quickcalcs/binomial1.cfm
+
+Udacity experiment screenshot:
+https://drive.google.com/file/d/0ByAfiG8HpNUMakVrS0s4cGN2TjQ/view
+
