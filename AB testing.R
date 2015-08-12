@@ -17,6 +17,19 @@ qbinom(0.025, (sum(control$Clicks) + sum(experiment$Clicks)), 0.5) /
 qbinom(0.975, (sum(control$Clicks) + sum(experiment$Clicks)), 0.5) /
   (sum(control$Clicks) + sum(experiment$Clicks))
 
+# Calculate click-through probabilities for control and experiment conditions
+CTR_control <- sum(control$Clicks) / sum(control$Pageviews)
+CTR_experiment <- sum(experiment$Clicks) / sum(experiment$Pageviews)
+
+# Calculate lower and upper bounds for click-through probability (control condition)
+qbinom(0.025, sum(control$Pageviews), CTR_control) /
+  sum(control$Pageviews)
+qbinom(0.975, sum(control$Pageviews), CTR_control) /
+  sum(control$Pageviews)
+
+# Click-through probability in the experiment
+CTR_experiment
+
 # Calculate the number of observed pageviews (unique cookies)
 sum(control$Pageviews) / (sum(experiment$Pageviews) + sum(control$Pageviews))
 
